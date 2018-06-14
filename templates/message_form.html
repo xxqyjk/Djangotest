@@ -20,19 +20,19 @@
 
     <label>
         <span>邮箱 :</span>
-        <input id="email" type="email" value="" name="email" placeholder="请输入邮箱地址"/>
+        <input id="email" type="email" value="{{ my_message.email }}" name="email" placeholder="请输入邮箱地址"/>
         <div class="error-msg"></div>
     </label>
 
     <label>
         <span>联系地址 :</span>
-        <input id="address" type="text" value="" name="address" placeholder="请输入联系地址"/>
+        <input id="address" type="text" value="{{ my_message.address }}" name="address" placeholder="请输入联系地址"/>
         <div class="error-msg"></div>
     </label>
 
     <label>
         <span>留言 :</span>
-        <textarea id="message" name="message"  placeholder="请输入你的建议"></textarea>
+        <textarea id="message" name="message"  placeholder="请输入你的建议">{{ my_message.message }}</textarea>
         <div class="error-msg"></div>
     </label>
     <div class="success-msg"></div>
